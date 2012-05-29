@@ -1,0 +1,151 @@
+BODY { margin: 0px; line-height:180%; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:9pt;  color:#333333}
+
+A.mainMenu:link, A.mainMenu:visited, A.mainMenu:active { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; color:Navy; text-decoration: none; display: block; height: 25px; line-height: 25px; }
+A.mainMenu:hover {	font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 11px;	font-weight: normal; color: #FFFFFF; text-decoration: none;	background-color: #F26C09; display: block; height: 25px;}
+
+A:link, A:active { color:#0080FF; text-decoration: none;  }
+A:visited { color:#3399bb; text-decoration: none;  }
+A:hover { color: BLUE; text-decoration: underline; }
+
+A.tag {color:Gray;text-decoration:none;font-size:14px;line-height:23px;}
+A.smallLink { color:#3388bb; font-size:10px; text-decoration: underline; }
+
+.tabTable {	background-color: #99CCFF; height:90 }
+.tabTD { border-left-width: 1px; border-left-style: solid; border-left-color: #FFFFFF; background-image:url('/images/general/background.jpg') }
+.subMenuTD { color:Silver; border-top-color:#99CCFF; border-bottom-color:#99CCFF; border-width: 1px; border-style:solid; background-image:url('/images/general/background.jpg')  }
+.subMenu { color:#33CC33; text-decoration: none; font-size:11px; }
+
+LI { margin-left:15px; }
+LI.compact { line-height:140%;margin-left:1px; }
+
+H1 {font-size:22px; font-family:Helvetica, Arial,Times New Roman; margin-top:3px;margin-left:1px;margin-bottom:3px;margin-right:3px; color:#3366aa; }
+H2 {font-size:18px; font-family:Helvetica, Arial,Times New Roman; margin-top:2px;margin-left:1px;margin-bottom:2px;margin-right:2px; color:#3366aa; }
+H3 {font-size:16px; font-family:Helvetica, Arial,Times New Roman; margin-top:2px;margin-left:1px;margin-bottom:2px;margin-right:2px; color:#3366aa; }
+
+select { 
+          background: lightyellow; 
+          font: 110% sans-serif;     
+          padding:5px; 
+          line-height:30px;         
+    }  
+    
+fieldset {
+	border: 1px solid #dd6900;
+	border-style: outset;
+	background: #FFFFFF;
+	border-left-style: inset;
+	border-top-style: inset;
+}
+legend {
+	font-weight: bolder;
+	color: #1E1F92;
+} 
+
+fieldset.plainlist
+{
+	 list-style-type:none;
+}
+
+.HeaderText 
+{
+	font-size:14px;
+	color:#556655; 
+}
+
+.activeList
+{
+	margin:0 0 0 0;
+	text-indent: 2px;
+	padding: 2px;
+	font-size:11px;
+	list-style-type:none;
+	list-style-position:outside;
+}
+
+PRE {font-family:Courier;font-size:medium;color:blue; margin:0px; padding:6px; border:1px inset; width:600; height: auto; overflow:scroll}
+CODE {font-family:Courier;font-size:medium;color:blue; margin:0px; padding:6px; border:1px inset; width:550; height: auto; overflow:scroll}
+
+.google {font-size: 13px;font-weight: normal;color: #000000;}
+.googleHref {font-size: 11px; font-weight: bold; color: #0000FF;}
+
+.error {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12pt;font-weight: bold;color: #FF0000;}
+.success {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12pt;font-weight: bold;color: darkgreen;}
+
+table.style1
+{  
+  background-color: #ffff99;
+}
+
+table.style2
+{  
+  background-color: #ccffcc;
+}
+
+table.style3
+{  
+  background-color: #ffffcc;
+}
+
+tr.style1
+{  
+  background-color: #ffff99;
+}
+
+tr.style2
+{  
+  background-color: #ccffcc;
+}
+
+tr.style3
+{  
+  background-color: #ffffcc;
+}
+
+tr.style4
+{  
+  background-color: #d3ffd5;
+}
+
+td.resourceBar
+{  
+  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType:0,StartColorStr:'#E6E6FA',EndColorStr:'#FFFFFF');
+}
+
+td.authorBar
+{  
+  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType:0,StartColorStr:'#E6E6FA',EndColorStr:'#FFFFFF');
+}
+
+td.tabBar
+{ 
+	font: 12px Verdana, Arial,helvetica, sans-serif; 
+	font-weight: normal; 
+	color: #000000; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #ffcc00 #ffcc00 #ffff99 #ffcc00; 
+	padding: 0.2em; 
+	background-color:#ffff99;
+	height:30px;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType:0,StartColorStr:'#ffff99',EndColorStr:'#FFFFFF');
+	text-align: left; 
+}
+
+td.tabSpacer2 
+{ 
+	width: 2px; 
+	background-color: #FFFFFF; 
+	border-width: 0px 0px 1px 0px; 
+	border-style: solid; 
+	border-color: #ffcc00;
+}
+
+td.style1
+{  
+  background-color: #ffff99;
+}
+
+td.style3
+{  
+  background-color: #FFFACD;
+}

@@ -1,0 +1,77 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=B27aVT05gT_vhJIKEkgXzzqVJuuanlgKak_DEHcCNtwGQgxkQARgBINWqnBcoBTgAUKnjyskEYOGkugWgAc2hmP8DsgEPd3d3LmRvY3N0b2MuY29tugEKMTYweDYwMF9qc8gBAdoBUmh0dHA6Ly93d3cuZG9jc3RvYy5jb20vZG9jcy8yNjEwMzMyMC9EZXNpZ24tZG9jdW1lbnQtZm9yLWxpYnJhcnktbWFuYWdlbWVudC1zeXN0ZW2AAgHIAtK8zxioAwHoAwXoA88F9QMACAAEiAYB&amp;num=1&amp;cid=5GiTvKWbD3drab6bPrMXcmGP&amp;sig=AOD64_0xyNeL9EfkXuicFf1REf9274Ce1A&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.zoomerang.com/free-account-surveys"; 
+google_ad.visible_url = "www.Zoomerang.com"; 
+google_ad.line1 = "Zoomerang Online Surveys"; 
+google_ad.line2 = "Customize \x26amp; send surveys and"; 
+google_ad.line3 = "polls. Fast, easy, flexible, free."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=BXL5xT05gT_vhJIKEkgXzzqVJ8YnwjQLJ1b36MsCNtwGgjQYQAhgCINWqnBcoBTgAULPc4KX6_____wFg4aS6BaAB4fuG_wOyAQ93d3cuZG9jc3RvYy5jb226AQoxNjB4NjAwX2pzyAEB2gFSaHR0cDovL3d3dy5kb2NzdG9jLmNvbS9kb2NzLzI2MTAzMzIwL0Rlc2lnbi1kb2N1bWVudC1mb3ItbGlicmFyeS1tYW5hZ2VtZW50LXN5c3RlbYACAagDAegDBegDzwX1AwAIAASIBgE&amp;num=2&amp;cid=5GiTvKWbD3drab6bPrMXcmGP&amp;sig=AOD64_3g32bGJ2nApa2E-e1LCPqrRAF85g&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.NextLevelPurchasing.com/inventory-management-and-control.php"; 
+google_ad.visible_url = "NextLevelPurchasing.com/inventory"; 
+google_ad.line1 = "Inventory management"; 
+google_ad.line2 = "Learn everything you need to know"; 
+google_ad.line3 = "about inventory management."; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=BwCcgT05gT_vhJIKEkgXzzqVJ5JWUvgPk79CDTMCNtwGA8QQQAxgDINWqnBcoBTgAUImNt7AHYOGkugWgAbyUsMYDsgEPd3d3LmRvY3N0b2MuY29tugEKMTYweDYwMF9qc8gBAdoBUmh0dHA6Ly93d3cuZG9jc3RvYy5jb20vZG9jcy8yNjEwMzMyMC9EZXNpZ24tZG9jdW1lbnQtZm9yLWxpYnJhcnktbWFuYWdlbWVudC1zeXN0ZW2oAwHoAwXoA88F9QMACAAEiAYB&amp;num=3&amp;cid=5GiTvKWbD3drab6bPrMXcmGP&amp;sig=AOD64_2Oalbahh6_C13a_euBPR1H-kpDwQ&amp;client=ca-pub-0150682605382365&amp;adurl=http://download.greensql.com/"; 
+google_ad.visible_url = "Download.GreenSQL.com/free-trial"; 
+google_ad.line1 = "SQL Download"; 
+google_ad.line2 = "Security, Caching, Auditing\x26amp;Masking"; 
+google_ad.line3 = "Real-time Protection, Try Now!"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 4; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BIKZaT05gT_vhJIKEkgXzzqVJ6-fyjgKL68e4IsCNtwHwogQQBBgEINWqnBcoBTgAUKS-yvUDYOGkugWyAQ93d3cuZG9jc3RvYy5jb226AQoxNjB4NjAwX2pzyAEB2gFSaHR0cDovL3d3dy5kb2NzdG9jLmNvbS9kb2NzLzI2MTAzMzIwL0Rlc2lnbi1kb2N1bWVudC1mb3ItbGlicmFyeS1tYW5hZ2VtZW50LXN5c3RlbcgC0_baHqgDAegDBegDzwX1AwAIAAQ&amp;num=4&amp;sig=AOD64_2r7_iGohjTditOKHPjiADlSiP3QA&amp;client=ca-pub-0150682605382365&amp;adurl=http://540.xg4ken.com/media/redir.php%3Fprof%3D3%26camp%3D117%26affcode%3Dkw35631089%26cid%3D9155198827%26networkType%3Dcontent%26url%5B%5D%3Dhttp%253A%252F%252Fwww.facebook.com%252Fcampaign%252Flanding.php%253Fcampaign_id%253D149057225193940%2526keyword%253Dsensitive%252Bgirl%2526placement%253Dbroad%2526creative%253D9155198827%2526extra_1%253D_kenshoo_clickid_"; 
+google_ad.visible_url = "www.Facebook.com"; 
+google_ad.line1 = "Looking for Sensitive Girl?"; 
+google_ad.line2 = "Find Sensitive Girl on Facebook."; 
+google_ad.line3 = "Sign Up Free Now!"; 
+google_ad.regionname = ""; 
+google_ads[3] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 5; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BrUrlT05gT_vhJIKEkgXzzqVJmqS__AHKsMfpHMCNtwHAixEQBRgFINWqnBcoBTgAULmc5fEHYOGkugWyAQ93d3cuZG9jc3RvYy5jb226AQoxNjB4NjAwX2pzyAEB2gFSaHR0cDovL3d3dy5kb2NzdG9jLmNvbS9kb2NzLzI2MTAzMzIwL0Rlc2lnbi1kb2N1bWVudC1mb3ItbGlicmFyeS1tYW5hZ2VtZW50LXN5c3RlbakCOigZHcmfqj6oAwHoAwXoA88F9QMACAAE&amp;num=5&amp;sig=AOD64_1UWhf1ZLtQqjKX0n8cJCpvpasxJg&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.erp.com.sg"; 
+google_ad.visible_url = "www.erp.com.sg"; 
+google_ad.line1 = "Singapore ERP Software"; 
+google_ad.line2 = "16 Year Track Record Of Successfull"; 
+google_ad.line3 = "E.R.P Implementation and Support."; 
+google_ad.regionname = ""; 
+google_ads[4] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.docstoc.com/docs/26103320/Design-document-for-library-management-system%26hl%3Den%26client%3Dca-pub-0150682605382365%26adU%3Dwww.Zoomerang.com%26adT%3DZoomerang%2BOnline%2BSurveys%26adU%3DNextLevelPurchasing.com/inventory%26adT%3DInventory%2Bmanagement%26adU%3DDownload.GreenSQL.com/free-trial%26adT%3DSQL%2BDownload%26adU%3Dwww.Facebook.com%26adT%3DLooking%2Bfor%2BSensitive%2BGirl%253F%26adU%3Dwww.erp.com.sg%26adT%3DSingapore%2BERP%2BSoftware%26gl%3DPH\x26usg\x3dAFQjCNEopYO0U-VXcjbsdvj7I0lpevAmjw";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

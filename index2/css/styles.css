@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Verdana;
+	font-size: 12px;
+	background-color: white;
+	text-align: center;
+	height: 100%;
+	border:1px solid red;
+}
+.vedio{
+	float:right;
+	height:300;
+	width:500;
+	border:1px solid green;
+	margin-top:100;
+	margin-right:100;
+	
+
+
+
+
+
+}
+
+div{
+	overflow: auto;
+}
+
+h1, h2, h3 {
+	font-family: Georgia;
+	font-style: italic;
+}
+
+h2{
+	font-size: 16px;	
+	color: #333333;
+	padding-bottom: 5px;
+}
+
+h1{
+	padding: 10px;
+	font-size: 36px;
+	color: white;
+}
+
+h3{
+	color: white;
+	font-size: 20px;
+}
+
+	h3 a{
+		color: #DB5C04;
+	}
+
+li{
+	list-style: none;	
+}
+
+#wrapper{
+	margin: 0px auto;
+	text-align: left;
+	width: 1960px;
+	
+}
+
+
+
+.ellipse{
+	float: left;
+}
+
+.container{
+	width: 560px;
+	float: center;
+	
+	padding: 20px;
+	background-color: white;
+}
+
+.page_navigation , .alt_page_navigation{
+	padding-bottom: 10px;
+}
+
+.page_navigation a, .alt_page_navigation a{
+	padding:3px 5px;
+	margin:2px;
+	color:white;
+	text-decoration:none;
+	float: left;
+	font-family: Tahoma;
+	font-size: 12px;
+	background-color:#DB5C04;
+}
+.active_page{
+	background-color:white !important;
+	color:black !important;
+}	
+
+.content, .alt_content{
+	color: black;
+}
+
+.content li, .alt_content li, .content > p{
+	padding: 5px;
+}

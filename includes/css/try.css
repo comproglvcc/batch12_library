@@ -1,0 +1,91 @@
+table.altrowstable  {
+	border: 1px solid #e3e3e3;
+	background-color: #f2f2f2;
+   	 width: 80%;
+	 margin-top:5px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+
+
+table.login {
+	
+	background-color: 999999;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+         width: 30%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+table.login td {
+	font-family: "Times New Roman", "Lucida Grande", sans-serif;
+	text-align: center;
+	color: white;
+	background-color: 999999;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border: dotted 0px #999;
+}
+
+table.login  td.first {
+	background-color: 999999 ;
+	font-family:"Impact" ;
+	font-size: 40px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: white;
+	padding-bottom:5px;
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+table.altrowstable  td, table.altrowstable  th {
+	padding: 2px;
+	color: #333;
+	
+	
+}
+table.altrowstable thead {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: .2em 0 .2em .5em;
+	text-align: left;
+	color: #4B4B4B;
+	background-color: 999999;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border-bottom: solid 1px #999;
+}
+table.altrowstable  td.first {
+	background-color: #C8C8C8 ;
+	font-family: 'Britannic Bold';
+	font-size: 20px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-shadow: white;
+	padding-bottom:2px;
+	padding-top:2px;
+	padding-left:10px;
+	padding-right:4px;
+	
+	
+}
+table.altrowstable td {
+	line-height: 20px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	border-bottom: 1px dotted #fff;
+	border-top: 1px dotted #fff;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:4px;
+
+}

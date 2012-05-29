@@ -1,0 +1,167 @@
+<?php	
+session_start();
+if (@$_SESSION['user']=='admin'){
+include "../utils/ClassificationUtils.php";
+$id = $_GET['id'];
+$class = ClassificationUtils::eachClass($id);
+
+if (!empty($_POST)){
+	$code=$_POST['code'];
+	$name=$_POST['name'];
+	$desc=$_POST['description'];
+	$result = ClassificationUtils::editClass($id, $code,$name,$desc);
+		if ($result){
+			echo "Succesfully modified". $code . " " . $name;
+		} else {
+			echo "Something wrong";
+
+		}
+	}
+
+ } else {
+	 header("location:../admin/admin_restriction.php");
+	 }
+
+?>
+<html>
+<head>
+<script>
+function check_code(){
+	code=document.getElementById("code").value;
+		if (code.length == 0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	function check_name(){
+	name=document.getElementById("name").value;
+		if (name.length == 0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	function check_description(){
+	desc=document.getElementById("description").value;
+		if (desc.length == 0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	
+	function validate_editClassification(){
+		if(check_code() && check_name() && check_description()){
+			return true;
+		}else{
+			alert("All fields are required!");
+			return false;
+		}
+	}
+</script>
+
+<script type="text/javascript">
+function altRows(id){
+	if(document.getElementsByTagName){  
+		
+		var table = document.getElementById(id);  
+		var rows = table.getElementsByTagName("tr"); 
+		 
+		for(i = 0; i < rows.length; i++){          
+			if(i % 2 == 0){
+				rows[i].className = "evenrowcolor";
+			}else{
+				rows[i].className = "oddrowcolor";
+			}      
+		}
+	}
+}
+
+window.onload=function(){
+	altRows('alternatecolor');
+}
+</script>
+
+<link rel="stylesheet" href="../includes/css/class_table.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../includes/css/layout.css" type="text/css" media="screen">
+</head>
+<div id="background">
+
+	
+	
+<div id="container">
+
+	<div id="header">
+	<img src="../includes/img/logo1.png" width='330' height='150'>	
+		<div id="navigation">
+		<ul>
+			<li id="logout"><a href="logout.php"><img src="../includes/img/nav_icons/logout.png" width='30' height='30'>Log Out</a></li>
+			<li id="inventory"><a href="#"><img src="../includes/img/nav_icons/inventory.png" width='30' height='30'>Inventory</a></li>
+			<li id="home"><a href="login.php"><img src="../includes/img/nav_icons/home.png"width='30' height='30'>Home</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div id="content-container">
+
+	<div id = "contentC">
+	<p style="font-family: 'Impact', Helvetica, Arial, sans-serif;
+	font-size: 30px; font-weight: normal;
+	text-align: center;
+	text-shadow: black 3px 3px 3px;
+	color:white; background:#ccc;">Update Classification</p>
+	<table class="altrowstable" id="alternatecolor" style="margin-top:50px; margin-left:100px;margin-bottom:100px;">
+			    
+	<form action="<?php $_SERVER['PHP_SELF']; ?>" method='POST'>
+
+		<?php foreach($class as $cla): ?>
+		<tr>
+			<td class='first'> Class Code : </td>
+			<td> <input type='text' name='code'size='25' id='code' value="<?php echo $cla['class_code']; ?>" onblur='check_code()'> </td>
+		</tr>
+		
+		
+		<tr>
+			<td class='first'> Class Name : </td>
+			<td> <input type='text' name='name'size='40' id='name' value="<?php echo $cla['class_name']; ?>"onblur='check_name()'> </td>
+		</tr>
+		
+		<tr>
+			<td valign='top' class='first'> Class Description : </td>
+			<td> <textarea name='description' rows='4' cols='40' id='description' onblur='check_description()'><?php echo $cla['class_description']; ?></textarea> </td>
+		</tr>
+		<?php endforeach; ?>
+		<tr>
+			<td align='center'><a href="getClass.php"><input type='button' value='View All Classification' /></a> </td>
+			<td align='center'><input type='submit' name='submit' value= "Save Changes" onclick ="return validate_editClassification()" /><br/>
+			
+			</td>
+			
+		</tr>
+
+
+	</form>
+	
+	</table>
+			<div id="navigation2BG">
+		<div id="navigation2">
+			<table align='center'>
+				<tr>
+				<td><a title='payments' href="../payment/readPayment.php"><img src="../includes/img/nav_icons/payment.png" width='80' height='80' onmouseover="this.style.zoom='150%';this.style.zoom='150%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='author' href="../authors/getAuthors.php"><img src="../includes/img/nav_icons/author.png" width='80' height='80' onmouseover="this.style.zoom='150%';this.style.zoom='150%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='penalties' href="../penalty/readPenalty.php"><img src="../includes/img/nav_icons/safe.png" width='80' height='80' onmouseover="this.style.zoom='150%';this.style.zoom='150%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='borrowers' href="../borrowers/getBorrowers.php"><img src="../includes/img/nav_icons/borrower.png" width='80' height='80' onmouseover="this.style.zoom='150%';this.style.zoom='150%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='transaction' href="../transaction/readTransaction.php"><img src="../includes/img/nav_icons/transaction.png" width='80' height='80' onmouseover="this.style.zoom='150%';this.style.zoom='150%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='classification' href="../classification/getClass.php"><img src="../includes/img/nav_icons/classification.png" width='80' height='80' onmouseover="this.style.zoom='150%';this.style.zoom='150%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='books' href="../books/readBooks.php"><img src="../includes/img/nav_icons/books.png" width='80' height='80' onmouseover="this.style.zoom='150%';this.style.zoom='150%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>		
+				</tr>
+			</table>
+		</div>	
+	</div>
+	</div>
+	</div>
+</div>
+</html>

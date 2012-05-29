@@ -1,0 +1,65 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BpAJ2Tk5gT4j0LsrkkQWyrfw1ocGt-QGxzoWkLsCNtwGw2wYQARgBINWqnBcoBDgAUMSFkPEBYOGkugWyAQ93d3cuZG9jc3RvYy5jb226AQozMzZ4MjgwX2pzyAEB2gFSaHR0cDovL3d3dy5kb2NzdG9jLmNvbS9kb2NzLzI2MTAzMzIwL0Rlc2lnbi1kb2N1bWVudC1mb3ItbGlicmFyeS1tYW5hZ2VtZW50LXN5c3RlbcgCqcv_GqgDAegDBegDzwX1AwAIAAQ&amp;num=1&amp;sig=AOD64_07XLQ8IFmCvY_MTnK2Uj7__2EwwQ&amp;client=ca-pub-0150682605382365&amp;adurl=http://540.xg4ken.com/media/redir.php%3Fprof%3D3%26camp%3D103%26affcode%3Dkw21584861%26cid%3D12332081761%26networkType%3Dcontent%26url%5B%5D%3Dhttp%253A%252F%252Fwww.facebook.com%252Fcampaign%252Flanding.php%253Fcampaign_id%253D149057225193940%2526keyword%253Ddfd%252Bfree%2526placement%253Dbroad%2526creative%253D12332081761%2526extra_1%253D_kenshoo_clickid_"; 
+google_ad.visible_url = "www.Facebook.com"; 
+google_ad.line1 = "Looking for Dfd Free?"; 
+google_ad.line2 = "Find Dfd Free on Facebook."; 
+google_ad.line3 = "Sign Up Free Now!"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=B4wMETk5gT4j0LsrkkQWyrfw1_pGiwAOulrexT8CNtwHgpxIQAhgCINWqnBcoBDgAUJeW1ewGYOGkugWgAZrBsdgDsgEPd3d3LmRvY3N0b2MuY29tugEKMzM2eDI4MF9qc8gBAdoBUmh0dHA6Ly93d3cuZG9jc3RvYy5jb20vZG9jcy8yNjEwMzMyMC9EZXNpZ24tZG9jdW1lbnQtZm9yLWxpYnJhcnktbWFuYWdlbWVudC1zeXN0ZW3IAraGhR-oAwHoAwXoA88F9QMACAAEiAYB&amp;num=2&amp;cid=5GhhmE0CxQgg6oRkcZJpotFT&amp;sig=AOD64_134yrYb5lZXazO-kILG6z0yA3OfA&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.educationdegreesource.com/request_form.php%3FschoolId%3D375%26RFIFormId%3D294%26ProgID%3D11368%26csource%3DGoogle%26cmethod%3Dsearch%26cname%3Dcb_onact%26ccontent%3DLiverpoolas_ms_project_management%26cterm%3DMaster_of_Science_in_Project_Management_(Oil_and_Gas)"; 
+google_ad.visible_url = "EducationDegreeSource.com/Online_MS"; 
+google_ad.line1 = "MS in Project Management"; 
+google_ad.line2 = "Oil/Gas Sector-focused Masters in"; 
+google_ad.line3 = "Project Management. Earn a Career!"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BHfkBTk5gT4j0LsrkkQWyrfw1iuKHvALS7fakH8CNtwHQtZoBEAMYAyDVqpwXKAQ4AFC3u5znA2DhpLoFsgEPd3d3LmRvY3N0b2MuY29tugEKMzM2eDI4MF9qc8gBAdoBUmh0dHA6Ly93d3cuZG9jc3RvYy5jb20vZG9jcy8yNjEwMzMyMC9EZXNpZ24tZG9jdW1lbnQtZm9yLWxpYnJhcnktbWFuYWdlbWVudC1zeXN0ZW2pAurckK-piFU-yALCwtUjqAMB6AMF6APPBfUDAAgABA&amp;num=3&amp;sig=AOD64_12hSpKK6-5HqjLUYB6PWx7fDpuXQ&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.hotelreservationssystem.com"; 
+google_ad.visible_url = "www.hotelreservationssystem.com"; 
+google_ad.line1 = "Hotel Reservation System"; 
+google_ad.line2 = "Airline \x26amp; Car Booking Engine,"; 
+google_ad.line3 = "CRS, GDS \x26amp; XMLs Integration."; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 4; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=BwRmSTk5gT4j0LsrkkQWyrfw13fKuDqGllZMBwI23AeDUAxAEGAQg1aqcFygEOABQ6JPzyQJg4aS6BaAB4Le__wOyAQ93d3cuZG9jc3RvYy5jb226AQozMzZ4MjgwX2pzyAEB2gFSaHR0cDovL3d3dy5kb2NzdG9jLmNvbS9kb2NzLzI2MTAzMzIwL0Rlc2lnbi1kb2N1bWVudC1mb3ItbGlicmFyeS1tYW5hZ2VtZW50LXN5c3RlbagDAegDBegDzwX1AwAIAASIBgE&amp;num=4&amp;cid=5GhhmE0CxQgg6oRkcZJpotFT&amp;sig=AOD64_0CQBTc0FYzUiTPdhxu9lwO0rnxoA&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.synametrics.com/SynametricsWebApp/WinSQL.jsp%3Frefid%3Dgoogle"; 
+google_ad.visible_url = "www.synametrics.com"; 
+google_ad.line1 = "Database Management"; 
+google_ad.line2 = "WinSQL - A Homogeneous Solution for"; 
+google_ad.line3 = "Heterogeneous Environment."; 
+google_ad.regionname = ""; 
+google_ads[3] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.docstoc.com/docs/26103320/Design-document-for-library-management-system%26hl%3Den%26client%3Dca-pub-0150682605382365%26adU%3Dwww.Facebook.com%26adT%3DLooking%2Bfor%2BDfd%2BFree%253F%26adU%3DEducationDegreeSource.com/Online_MS%26adT%3DMS%2Bin%2BProject%2BManagement%26adU%3Dwww.hotelreservationssystem.com%26adT%3DHotel%2BReservation%2BSystem%26adU%3Dwww.synametrics.com%26adT%3DDatabase%2BManagement%26gl%3DPH\x26usg\x3dAFQjCNFGXn8T8pnw29ORASv3dzkCZbcDaw";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

@@ -1,0 +1,236 @@
+<?php
+
+include "../utils/ClassificationUtils.php";
+include "../utils/AuthorUtils.php";
+include "../utils/BookUtils.php";
+	$classes = ClassificationUtils::getClass();
+	$authors = AuthorUtils::getAuthors();
+	
+	if(isset($_POST['submit'])){
+		$access = $_POST['bnumber'];
+		$name = $_POST['btitle'];
+		$copyright = $_POST['bcopyright'];
+		$publisher = $_POST['bpublisher'];
+		$page = $_POST['bpagenumber'];
+		$author = $_POST['bauthor'];
+		$class = $_POST['bclassification'];
+		$price = $_POST['bprice'];
+		$location = $_POST['blocation'];
+	$isExisting = BookUtils::exist($access, $name, $copyright, $publisher, $page, $author, $class, $price, $location);
+
+        if($isExisting){
+            @$result = BookUtils::addBook($access, $name, $copyright, $publisher, $page, $author, $class, $price, $location);
+	}else{
+              echo "<span color='red'>This item is already existing in the database, cannot be saved again.</span>";
+ }
+        if(@$result=='true'){
+            echo "<span color='green'>Successfully saved another item.</span>";
+        }
+        }
+
+?>
+<html>
+<head>
+<script>
+
+	function check_bnumber(){
+	bnumber=document.getElementById("bnumber").value;
+		if (bnumber.length == 0){	
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	function check_btitle(){
+	title=document.getElementById("btitle").value;
+		if (title.length == 0){	
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+
+	
+	function check_bcopyright(){
+	copyright=document.getElementById("bcopyright").value;
+		if (copyright.length == 0){	
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	function check_bpublisher(){
+	publisher=document.getElementById("bpublisher").value;
+		if (publisher.length == 0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	function check_bpagenumber(){
+	numpages=document.getElementById("bpagenumber").value;
+		if (numpages.length == 0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	function check_bprice(){
+	price=document.getElementById("bprice").value;
+		if (price.length == 0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	function check_blocation(){
+	location=document.getElementById("blocation").value;
+		if (location.length == 0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	function validate_addBook(){
+		if(check_bnumber() && check_btitle() && check_bcopyright() && check_bpublisher()
+			&& check_bpagenumber() && check_bprice() && check_blocation()){
+			return true;
+		}else{
+			alert("Complete all the data needed!");
+			return false;
+		}
+	}
+
+
+</script>
+
+<script type="text/javascript">
+function altRows(id){
+	if(document.getElementsByTagName){  
+		
+		var table = document.getElementById(id);  
+		var rows = table.getElementsByTagName("tr"); 
+		 
+		for(i = 0; i < rows.length; i++){          
+			if(i % 2 == 0){
+				rows[i].className = "evenrowcolor";
+			}else{
+				rows[i].className = "oddrowcolor";
+			}      
+		}
+	}
+}
+
+window.onload=function(){
+	altRows('alternatecolor');
+}
+</script>
+
+<link rel="stylesheet" href="../includes/css/class_table.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../includes/css/layout.css" type="text/css" media="screen">
+</head>
+<div id="background">
+
+	
+	
+<div id="container">
+
+	<div id="header">
+	<img src="../includes/img/logo1.png" width='330' height='150'>	
+		<div id="navigation">
+		<ul>
+			<li id="logout"><a href="logout.php"><img src="../includes/img/nav_icons/logout.png" width='30' height='30'>Log Out</a></li>
+			<li id="inventory"><a href="#"><img src="../includes/img/nav_icons/inventory.png" width='30' height='30'>Inventory</a></li>
+			<li id="update"><a href="login.php"><img src="../includes/img/nav_icons/.png"width='30' height='30'>Updates</a></li>
+			<li id="home"><a href="login.php"><img src="../includes/img/nav_icons/home.png"width='30' height='30'>Home</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div id="content-container">
+	<div id="navigation2BG">
+		<div id="navigation2">
+			<table align='center'>
+				<tr>
+				<td><a title='payments' href="../payment/readPayment.php"><img src="../includes/img/nav_icons/payment.png" width='80' height='80' onmouseover="this.style.zoom='200%';this.style.zoom='200%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='author' href="../authors/getAuthors.php"><img src="../includes/img/nav_icons/author.png" width='80' height='80' onmouseover="this.style.zoom='200%';this.style.zoom='200%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='penalties' href="../penalty/readPenalty.php"><img src="../includes/img/nav_icons/safe.png" width='80' height='80' onmouseover="this.style.zoom='200%';this.style.zoom='200%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='borrowers' href="../borrowers/getBorrowers.php"><img src="../includes/img/nav_icons/borrower.png" width='80' height='80' onmouseover="this.style.zoom='200%';this.style.zoom='200%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='transaction' href="../transaction/readTransaction.php"><img src="../includes/img/nav_icons/transaction.png" width='80' height='80' onmouseover="this.style.zoom='200%';this.style.zoom='200%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='classification' href="../classification/getClass.php"><img src="../includes/img/nav_icons/classification.png" width='80' height='80' onmouseover="this.style.zoom='200%';this.style.zoom='200%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>
+				<td><a title='books' href="../books/readBooks.php"><img src="../includes/img/nav_icons/books.png" width='80' height='80' onmouseover="this.style.zoom='200%';this.style.zoom='200%';" onmouseout="this.style.zoom='100%';this.style.zoom='100%';"></a></td>		
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id = "contentC">
+	<form action="<?php $_SERVER['PHP_SELF']; ?>" method='POST'>
+	<table class="altrowstable" id="alternatecolor" style="margin-top:50px; margin-left:100px;">
+
+	<tr>
+		<td class='first' >Accession Number: </td>
+		<td> <input type='text' name='bnumber' id='bnumber' size='35'onblur='check_bnumber()'></td>
+	</tr>
+	<tr>
+		<td class='first'>Book Title: </td>
+		<td colspan='3'> <input type='text' name='btitle' id='btitle' size='118'onblur='check_btitle()'></td>
+	</tr>
+	<tr>
+		<td class='first'>Book Copyright: </td>
+		<td> <input type='text' name='bcopyright' id='bcopyright' size='35'onblur='check_bcopyright()'></td>
+		<td class='first'>Book Publisher: </td>
+		<td> <input type='text' name='bpublisher' id='bpublisher' size='35'onblur='check_bpublisher()'></td>
+	</tr>
+	
+	
+	<tr>
+		<td class='first'>Page Number: </td>
+		<td> <input type='text' name='bpagenumber' id='bpagenumber' size='35'onblur='check_bpagenumber()'></td>
+		<td class='first'>Classification: </td>
+		<td><select name ="bclassification">
+			<?php foreach($classes as $class):?>
+			<option value=<?php echo $class['id']; ?>><?php echo $class['class_name'];?></option>
+			<?php endforeach;?>
+		</select>
+	</td>
+	</tr>
+	
+	<tr>
+		<td class='first'>Author: </td>
+		<td><select name ="bauthor">
+			<?php foreach($authors as $author):?>
+			<option value=<?php echo $author['id']; ?>><?php echo $author['firstname']." ".$author['lastname'];?></option>
+			<?php endforeach;?>
+			</select>
+		</td>
+		<td colspan='2'>
+			<i>If the author of the book doesn't exist, <a href='../authors/addAuthor.php'>click</a> here.</i>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class='first'>Unit Price: </td>
+		<td> <input type='text' name='bprice' id='bprice' size='30'onblur='check_bprice()'> Php</td>
+		<td class='first'>Location: </td>
+		<td> <input type='text' name='blocation' id='blocation' size='35'onblur='check_blocation()'></td>
+	</tr>
+	
+	<tr>
+		<td colspan='4'align='center'><input type='submit' name='submit' value= "Add New Book" onclick ="return validate_addBook()" /></td>
+	</tr>	
+</form>
+</table>
+
+
+				
+	</table>
+	</div>
+	</div>
+</div>
+</html>

@@ -1,0 +1,53 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BHJ33Tk5gT5WZHsfzkAWUu70g_a6WhAKdyObWJMCNtwHA5kYQARgBINWqnBcoAzgAUMKR0doHYOGkugWgAeX6nusDsgEPd3d3LmRvY3N0b2MuY29tugEJNDY4eDYwX2pzyAEB2gFSaHR0cDovL3d3dy5kb2NzdG9jLmNvbS9kb2NzLzI2MTAzMzIwL0Rlc2lnbi1kb2N1bWVudC1mb3ItbGlicmFyeS1tYW5hZ2VtZW50LXN5c3RlbYACAcgCzcrSFqgDAegDBegDzwX1AwAIAAQ&amp;num=1&amp;sig=AOD64_23mcBC_BgohwmYiLqJC3eWVOMZNA&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.incontact.com/tco-study.html%3Futm_term%3Dcall%2520center%2520software%26_kk%3Dcall%2520center%2520software%26_kt%3Dd06e6db6-74e1-4a08-9247-05470e3c4979"; 
+google_ad.visible_url = "InContact.com/Free"; 
+google_ad.line1 = "Best Call Center Software"; 
+google_ad.line2 = "Save up to 50% With Our Call Center"; 
+google_ad.line3 = "Solutions. Download the Free Study."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BcqDHTk5gT5WZHsfzkAWUu70gy9S9xQHj2enZFcCNtwHws6UBEAIYAiDVqpwXKAM4AFDX8pv2_v____8BYOGkugWyAQ93d3cuZG9jc3RvYy5jb226AQk0Njh4NjBfanPIAQHaAVJodHRwOi8vd3d3LmRvY3N0b2MuY29tL2RvY3MvMjYxMDMzMjAvRGVzaWduLWRvY3VtZW50LWZvci1saWJyYXJ5LW1hbmFnZW1lbnQtc3lzdGVtgAIBqQIvSmbhUDJiPqgDAegDBegDzwX1AwAIAAQ&amp;num=2&amp;sig=AOD64_2u9pcG6IyKsVcOR-ACScDjMYpjlA&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.rfid-library.com"; 
+google_ad.visible_url = "www.rfid-library.com"; 
+google_ad.line1 = "RFID System for Library"; 
+google_ad.line2 = "LibBest Library RFID Management,"; 
+google_ad.line3 = "Security System"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BlzIQTk5gT5WZHsfzkAWUu70gquT5PKKRx94JwI23AZCSFBADGAMg1aqcFygDOABQqb-_3QRg4aS6BaABzsOj_gOyAQ93d3cuZG9jc3RvYy5jb226AQk0Njh4NjBfanPIAQHaAVJodHRwOi8vd3d3LmRvY3N0b2MuY29tL2RvY3MvMjYxMDMzMjAvRGVzaWduLWRvY3VtZW50LWZvci1saWJyYXJ5LW1hbmFnZW1lbnQtc3lzdGVtgAIByALO7bgBqAMB6AMF6APPBfUDAAgABA&amp;num=3&amp;sig=AOD64_0937ODfyybP_RrFnt6nUNWHBA2fw&amp;client=ca-pub-0150682605382365&amp;adurl=http://www.terratechnology.com"; 
+google_ad.visible_url = "www.TerraTechnology.com"; 
+google_ad.line1 = "Real Time Inventory"; 
+google_ad.line2 = "Terra\x26#39;s Inventory Optimization"; 
+google_ad.line3 = "decreases inventory more than 10%."; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.docstoc.com/docs/26103320/Design-document-for-library-management-system%26hl%3Den%26client%3Dca-pub-0150682605382365%26adU%3DInContact.com/Free%26adT%3DBest%2BCall%2BCenter%2BSoftware%26adU%3Dwww.rfid-library.com%26adT%3DRFID%2BSystem%2Bfor%2BLibrary%26adU%3Dwww.TerraTechnology.com%26adT%3DReal%2BTime%2BInventory%26gl%3DPH\x26usg\x3dAFQjCNFUg7-xZJWck_t6G74NZipVNGqv7A";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}
